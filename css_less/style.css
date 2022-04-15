@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+  background: url('https://wallpaperaccess.com/full/17520.jpg') center / cover no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+*{
+  font-family: 'Koho', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2em;
+  gap: 20px;
+}
+.card{
+  padding: 1em;
+  font-size: 20px;
+  border: 1px solid darkviolet;
+  box-shadow:  0 0 5px darkviolet;
+  background-color: rgb(37, 37, 186);
+  color: white;
+  transition: .3s;
+}
+.card:hover{
+  color: black;
+  background-color: aqua;
+}
+.single {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.singleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  background: rgba(167, 4, 135, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.singleWrapper img {
+  max-width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.singleWrapper ul {
+  list-style: none;
+}
+
+.singleWrapper ul li {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.back {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(129, 7, 145);
+  color: white;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  cursor: pointer;
+}
+
+.buttons {
+  width: 100%;
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  color: white;
+}
+
+.next , .prev {
+  padding: 10px 20px;
+  background: none;
+  border-radius: 5px;
+  color: rgb(111, 14, 98);
+  outline: none;
+  border: 3px solid black;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: .5s;
+}
+
+.next:hover , .prev:hover {
+  background: black;
+}
+
+.prev:disabled , .prev:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
